@@ -6,7 +6,7 @@ The **Laptop** color theme has lighter editor and sidebar surfaces for displays 
 
 The **Cyberpunk+** variant gives the active tab a brighter violet surface and cyan label, with a hot-pink upper edge on classic tabs. Both classic and modern VS Code tab styles are colored. Inactive tabs are dimmer so the selected file stands apart. It also adds a cyan Explorer focus outline and a darker purple terminal while keeping the syntax palette and muted status bar.
 
-This repository disables the VS Code error-line audio cue in its workspace settings.
+This repository disables VS Code's error and warning audio cues in its workspace settings.
 
 Plain HTML text inside elements is white in all three color themes, while tag names keep their pink accent.
 

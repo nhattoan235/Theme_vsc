@@ -1,5 +1,14 @@
 {
   "accessibility.signals.lineHasError": {
     "sound": "off"
+  },
+  "accessibility.signals.positionHasError": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasWarning": {
+    "sound": "off"
+  },
+  "accessibility.signals.positionHasWarning": {
+    "sound": "off"
   }
 }
