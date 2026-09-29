@@ -6,11 +6,13 @@ The **Laptop** color theme has lighter editor and sidebar surfaces for displays 
 
 The **Cyberpunk+** variant gives the active tab a brighter violet surface and cyan label, with a hot-pink upper edge on classic tabs. Both classic and modern VS Code tab styles are colored. Inactive tabs are dimmer so the selected file stands apart. It also adds a cyan Explorer focus outline and a darker purple terminal while keeping the syntax palette and muted status bar.
 
+Plain HTML text inside elements is white in all three color themes, while tag names keep their pink accent.
+
 ## Included packages
 
 | Package | What it contains |
 | --- | --- |
-| `neon-district-theme-0.1.8.vsix` | Three color themes: **Purple Dashboard**, **Laptop**, and **Cyberpunk+**. It also includes the original Neon District file icon theme. |
+| `neon-district-theme-0.1.9.vsix` | Three color themes: **Purple Dashboard**, **Laptop**, and **Cyberpunk+**. It also includes the original Neon District file icon theme. |
 | `material-neon-icons/material-neon-icons-0.1.0.vsix` | Philipp Kief's Material file icons, with distinct project folders and custom Markdown and CSV icons. The upstream MIT license is included. |
 
 Install both VSIX files from VS Code's Extensions view with **Install from VSIX...**. Then choose **Neon District — Cyberpunk+** under **Preferences: Color Theme** and **Material Neon Icons** under **Preferences: File Icon Theme**.

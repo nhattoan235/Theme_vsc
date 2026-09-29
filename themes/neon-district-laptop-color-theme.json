@@ -248,8 +248,15 @@
     },
     {
       "scope": [
+        "text.html.basic"
+      ],
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "scope": [
         "entity.name.tag",
-        "meta.tag",
         "support.class.component"
       ],
       "settings": {

@@ -1,4 +1,5 @@
-# Keep installable packages for the latest color theme and Material icon theme only.
+# Keep published VSIX release artifacts only.
 *.vsix
 !neon-district-theme-0.1.8.vsix
+!neon-district-theme-0.1.9.vsix
 !material-neon-icons/material-neon-icons-0.1.0.vsix
