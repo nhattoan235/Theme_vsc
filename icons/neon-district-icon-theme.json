@@ -1,0 +1,63 @@
+{
+  "$schema": "vscode://schemas/icon-theme",
+  "hidesExplorerArrows": false,
+  "iconDefinitions": {
+    "file": { "iconPath": "./svg/file.svg" },
+    "folder": { "iconPath": "./svg/folder.svg" },
+    "folderOpen": { "iconPath": "./svg/folder-open.svg" },
+    "markdown": { "iconPath": "./svg/markdown.svg" },
+    "javascript": { "iconPath": "./svg/javascript.svg" },
+    "typescript": { "iconPath": "./svg/typescript.svg" },
+    "json": { "iconPath": "./svg/json.svg" },
+    "test": { "iconPath": "./svg/test.svg" },
+    "html": { "iconPath": "./svg/html.svg" },
+    "css": { "iconPath": "./svg/css.svg" },
+    "image": { "iconPath": "./svg/image.svg" }
+  },
+  "file": "file",
+  "folder": "folder",
+  "folderExpanded": "folderOpen",
+  "rootFolder": "folder",
+  "rootFolderExpanded": "folderOpen",
+  "fileNames": {
+    "package.json": "json",
+    "tsconfig.json": "json"
+  },
+  "languageIds": {
+    "markdown": "markdown",
+    "javascript": "javascript",
+    "typescript": "typescript",
+    "javascriptreact": "javascript",
+    "typescriptreact": "typescript",
+    "json": "json",
+    "html": "html",
+    "css": "css"
+  },
+  "fileExtensions": {
+    "md": "markdown",
+    "mdx": "markdown",
+    "js": "javascript",
+    "mjs": "javascript",
+    "cjs": "javascript",
+    "jsx": "javascript",
+    "ts": "typescript",
+    "tsx": "typescript",
+    "json": "json",
+    "jsonc": "json",
+    "html": "html",
+    "htm": "html",
+    "css": "css",
+    "scss": "css",
+    "svg": "image",
+    "png": "image",
+    "jpg": "image",
+    "jpeg": "image",
+    "webp": "image",
+    "test.js": "test",
+    "spec.js": "test",
+    "test.ts": "test",
+    "spec.ts": "test",
+    "test.mjs": "test",
+    "spec.mjs": "test"
+  }
+}

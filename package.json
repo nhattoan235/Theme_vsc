@@ -1,0 +1,38 @@
+{
+  "name": "neon-district-theme",
+  "displayName": "Neon District — Purple Dashboard",
+  "description": "A high-contrast cyberpunk VS Code theme with a purple dashboard and orange neon accents.",
+  "version": "0.1.8",
+  "publisher": "local",
+  "private": true,
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Themes"],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Neon District — Purple Dashboard",
+        "uiTheme": "vs-dark",
+        "path": "./themes/neon-district-color-theme.json"
+      },
+      {
+        "label": "Neon District — Laptop",
+        "uiTheme": "vs-dark",
+        "path": "./themes/neon-district-laptop-color-theme.json"
+      },
+      {
+        "label": "Neon District — Cyberpunk+",
+        "uiTheme": "vs-dark",
+        "path": "./themes/neon-district-cyberpunk-plus-color-theme.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "neon-district-icons",
+        "label": "Neon District Icons",
+        "path": "./icons/neon-district-icon-theme.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "materialVersion": "5.38.1",
+  "folders": [
+    { "name": "AI_Context", "current": "folder", "base": "context", "color": "#B49AF4", "note": "ngữ cảnh · tím" },
+    { "name": "fixtures", "current": "mock", "base": "mock", "color": "#F3819F", "note": "dữ liệu mẫu · hồng san hô" },
+    { "name": "phases", "current": "folder", "base": "tasks", "color": "#F1AE6A", "note": "giai đoạn · cam" },
+    { "name": "templates", "current": "template", "base": "template", "color": "#DCC77E", "note": "khuôn mẫu · vàng dịu" },
+    { "name": "examples", "current": "examples", "base": "examples", "color": "#63D2C2", "note": "ví dụ · ngọc lam" },
+    { "name": "scripts", "current": "scripts", "base": "scripts", "color": "#74AFE9", "note": "script · xanh trời" },
+    { "name": "src", "current": "src", "base": "src", "color": "#77CF98", "note": "mã nguồn · xanh lá" },
+    { "name": "core", "current": "core", "base": "core", "color": "#939BF3", "note": "lõi · xanh tím" },
+    { "name": "data", "current": "database", "base": "database", "color": "#E2BD64", "note": "dữ liệu · vàng đất" },
+    { "name": "render", "current": "folder", "base": "views", "color": "#F29189", "note": "hiển thị · hồng cam" },
+    { "name": "spec", "current": "test", "base": "test", "color": "#D88EE8", "note": "kiểm thử · tím hồng" }
+  ]
+}

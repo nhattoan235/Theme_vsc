@@ -1,0 +1,4 @@
+# Keep installable packages for the latest color theme and Material icon theme only.
+*.vsix
+!neon-district-theme-0.1.8.vsix
+!material-neon-icons/material-neon-icons-0.1.0.vsix

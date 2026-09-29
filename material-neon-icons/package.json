@@ -1,0 +1,21 @@
+{
+  "name": "material-neon-icons",
+  "displayName": "Material Neon Icons",
+  "description": "Material Icon Theme file icons with distinct project folders and custom Markdown and CSV icons.",
+  "version": "0.1.0",
+  "publisher": "local",
+  "private": true,
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Themes"],
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "material-neon-icons",
+        "label": "Material Neon Icons",
+        "path": "./dist/material-icons.json"
+      }
+    ]
+  }
+}

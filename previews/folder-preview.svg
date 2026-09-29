@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="930" viewBox="0 0 1280 930">
+<style>
+  .title { font: 700 30px 'Segoe UI', sans-serif; fill: #F4EDFF }
+  .sub { font: 16px 'Segoe UI', sans-serif; fill: #B9ABC9 }
+  .head { font: 700 19px 'Segoe UI', sans-serif; fill: #FFBB79 }
+  .name { font: 16px 'Segoe UI', sans-serif; fill: #EEE8F6 }
+  .note { font: 13px 'Segoe UI', sans-serif; fill: #BDAED0 }
+  .small { font: 14px 'Segoe UI', sans-serif; fill: #B9ABC9 }
+</style>
+<rect width="1280" height="930" fill="#0C0A16"/>
+<text x="40" y="52" class="title">Material Icon Theme · đề xuất cho thư mục</text>
+<text x="40" y="82" class="sub">Giữ icon Material cho các file khác. Đổi thư mục theo vai trò và vẽ lại riêng Markdown, CSV.</text>
+<rect x="28" y="103" width="580" height="777" rx="13" fill="#1B1727" stroke="#493859"/>
+<rect x="649" y="103" width="603" height="777" rx="13" fill="#1B1727" stroke="#735392"/>
+<text x="58" y="136" class="head">HIỆN TẠI</text>
+<text x="681" y="136" class="head">BẢN ĐỀ XUẤT</text>
+
+    <rect x="39" y="143" width="558" height="39" rx="6" fill="#1B1727"/>
+    <rect x="661" y="143" width="580" height="39" rx="6" fill="#1B1727"/>
+    <svg x="59" y="150" width="23" height="23" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232" fill="#90a4ae" /></svg>
+    <text x="95" y="167" class="name">AI_Context</text>
+    <svg x="681" y="150" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#B49AF4" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#FFF5E8" d="M15 11v-1a1 1 0 0 0-1-1h-3V8h1V5H9v3h1v1H7a1 1 0 0 0-1 1v1H5v3h3v-3H7v-1h3v1H9v3h3v-3h-1v-1h3v1h-1v3h3v-3z"/></svg>
+    <text x="717" y="167" class="name">AI_Context</text>
+    <text x="1010" y="166" class="note">ngữ cảnh · tím</text>
+    <rect x="39" y="190" width="558" height="39" rx="6" fill="#211C2C"/>
+    <rect x="661" y="190" width="580" height="39" rx="6" fill="#252033"/>
+    <svg x="59" y="197" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#8d6e63" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#d7ccc8" d="M8 12.334V14h1.667l4.915-4.915-1.667-1.666zm7.87-4.537a.443.443 0 0 0 0-.626l-1.04-1.04a.443.443 0 0 0-.626-.001l-.813.813 1.666 1.667z"/></svg>
+    <text x="95" y="214" class="name">fixtures</text>
+    <svg x="681" y="197" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#F3819F" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#FFF5E8" d="M8 12.334V14h1.667l4.915-4.915-1.667-1.666zm7.87-4.537a.443.443 0 0 0 0-.626l-1.04-1.04a.443.443 0 0 0-.626-.001l-.813.813 1.666 1.667z"/></svg>
+    <text x="717" y="214" class="name">fixtures</text>
+    <text x="1010" y="213" class="note">dữ liệu mẫu · hồng san hô</text>
+    <rect x="39" y="237" width="558" height="39" rx="6" fill="#1B1727"/>
+    <rect x="661" y="237" width="580" height="39" rx="6" fill="#1B1727"/>
+    <svg x="59" y="244" width="23" height="23" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232" fill="#90a4ae" /></svg>
+    <text x="95" y="261" class="name">phases</text>
+    <svg x="681" y="244" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#F1AE6A" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#FFF5E8" d="M9 5v1a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1V5h-1v1h-4V5zm0 3h6v5H9zm4.318 1-1.77 1.627-.859-.805-.689.733L11.54 12 14 9.74z"/></svg>
+    <text x="717" y="261" class="name">phases</text>
+    <text x="1010" y="260" class="note">giai đoạn · cam</text>
+    <rect x="39" y="284" width="558" height="39" rx="6" fill="#211C2C"/>
+    <rect x="661" y="284" width="580" height="39" rx="6" fill="#252033"/>
+    <svg x="59" y="291" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#8d6e63" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#d7ccc8" d="M6 13h4v1H6Zm0-2h4v1H6Zm0-2h4v1H6Zm0-2h4v1H6Zm5 0h4v7h-4z"/></svg>
+    <text x="95" y="308" class="name">templates</text>
+    <svg x="681" y="291" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#DCC77E" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#FFF5E8" d="M6 13h4v1H6Zm0-2h4v1H6Zm0-2h4v1H6Zm0-2h4v1H6Zm5 0h4v7h-4z"/></svg>
+    <text x="717" y="308" class="name">templates</text>
+    <text x="1010" y="307" class="note">khuôn mẫu · vàng dịu</text>
+    <rect x="39" y="331" width="558" height="39" rx="6" fill="#1B1727"/>
+    <rect x="661" y="331" width="580" height="39" rx="6" fill="#1B1727"/>
+    <svg x="59" y="338" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#009688" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#b2dfdb" d="M8 7v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1m1 0h1a1 1 0 0 1-1 1Zm0 2a2 2 0 0 0 2-2h1a3.003 3.003 0 0 1-3 3zm0 4 2-2 .8.8L13 10l2 3z"/></svg>
+    <text x="95" y="355" class="name">examples</text>
+    <svg x="681" y="338" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#63D2C2" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#FFF5E8" d="M8 7v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1m1 0h1a1 1 0 0 1-1 1Zm0 2a2 2 0 0 0 2-2h1a3.003 3.003 0 0 1-3 3zm0 4 2-2 .8.8L13 10l2 3z"/></svg>
+    <text x="717" y="355" class="name">examples</text>
+    <text x="1010" y="354" class="note">ví dụ · ngọc lam</text>
+    <rect x="39" y="378" width="558" height="39" rx="6" fill="#211C2C"/>
+    <rect x="661" y="378" width="580" height="39" rx="6" fill="#252033"/>
+    <svg x="59" y="385" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#546e7a" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#cfd8dc" d="M14 6h-3a2 2 0 0 0-2 2v4h1V8h4v4.947a1.04 1.04 0 0 1-.832 1.04A1 1 0 0 1 12 13H8a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V8h1a2 2 0 0 0-2-2"/></svg>
+    <text x="95" y="402" class="name">scripts</text>
+    <svg x="681" y="385" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#74AFE9" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#FFF5E8" d="M14 6h-3a2 2 0 0 0-2 2v4h1V8h4v4.947a1.04 1.04 0 0 1-.832 1.04A1 1 0 0 1 12 13H8a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V8h1a2 2 0 0 0-2-2"/></svg>
+    <text x="717" y="402" class="name">scripts</text>
+    <text x="1010" y="401" class="note">script · xanh trời</text>
+    <rect x="39" y="425" width="558" height="39" rx="6" fill="#1B1727"/>
+    <rect x="661" y="425" width="580" height="39" rx="6" fill="#1B1727"/>
+    <svg x="59" y="432" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#4caf50" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#c8e6c9" d="M9.225 15a.5.5 0 0 1-.12-.014.57.568 0 0 1-.414-.661l1.549-7.872a.566.565 0 0 1 .254-.372.53.53 0 0 1 .4-.067.57.57 0 0 1 .415.662l-1.552 7.872a.56.56 0 0 1-.253.371.53.53 0 0 1-.28.081m3.105-1h-.038a.54.54 0 0 1-.382-.206.583.582 0 0 1 .057-.774l2.664-2.483-2.653-2.312a.583.582 0 0 1-.08-.772.54.54 0 0 1 .377-.218.53.53 0 0 1 .406.129l3.126 2.727a.579.578 0 0 1 .002.862l-3.114 2.904a.536.535 0 0 1-.365.144zm-4.661 0a.536.535 0 0 1-.365-.146L4.186 10.95a.58.58 0 0 1-.005-.846l.01-.01 3.128-2.726a.516.515 0 0 1 .4-.13.54.54 0 0 1 .38.218.583.582 0 0 1-.08.773l-2.65 2.31 2.663 2.482a.579.578 0 0 1 .056.774.536.535 0 0 1-.381.206z"/></svg>
+    <text x="95" y="449" class="name">src</text>
+    <svg x="681" y="432" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#77CF98" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#FFF5E8" d="M9.225 15a.5.5 0 0 1-.12-.014.57.568 0 0 1-.414-.661l1.549-7.872a.566.565 0 0 1 .254-.372.53.53 0 0 1 .4-.067.57.57 0 0 1 .415.662l-1.552 7.872a.56.56 0 0 1-.253.371.53.53 0 0 1-.28.081m3.105-1h-.038a.54.54 0 0 1-.382-.206.583.582 0 0 1 .057-.774l2.664-2.483-2.653-2.312a.583.582 0 0 1-.08-.772.54.54 0 0 1 .377-.218.53.53 0 0 1 .406.129l3.126 2.727a.579.578 0 0 1 .002.862l-3.114 2.904a.536.535 0 0 1-.365.144zm-4.661 0a.536.535 0 0 1-.365-.146L4.186 10.95a.58.58 0 0 1-.005-.846l.01-.01 3.128-2.726a.516.515 0 0 1 .4-.13.54.54 0 0 1 .38.218.583.582 0 0 1-.08.773l-2.65 2.31 2.663 2.482a.579.578 0 0 1 .056.774.536.535 0 0 1-.381.206z"/></svg>
+    <text x="717" y="449" class="name">src</text>
+    <text x="1010" y="448" class="note">mã nguồn · xanh lá</text>
+    <rect x="39" y="472" width="558" height="39" rx="6" fill="#211C2C"/>
+    <rect x="661" y="472" width="580" height="39" rx="6" fill="#252033"/>
+    <svg x="59" y="479" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#1976d2" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#bbdefb" d="M9 7v5h5V7Zm4 4h-3V8h3zM7 6h1V5a1 1 0 0 0-1 1m2-1h1v1H9Zm2 0h1v1h-1zm2 0h1v1h-1zm2 0v1h1a1 1 0 0 0-1-1m0 2h1v1h-1zm0 2h1v1h-1zm0 2h1v1h-1zm0 3a1 1 0 0 0 1-1h-1zm-2-1h1v1h-1zm-2 0h1v1h-1zm-2 0h1v1H9Zm-1 1v-1H7a1 1 0 0 0 1 1m-1-3h1v1H7Zm0-2h1v1H7Zm0-2h1v1H7Z"/></svg>
+    <text x="95" y="496" class="name">core</text>
+    <svg x="681" y="479" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#939BF3" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#FFF5E8" d="M9 7v5h5V7Zm4 4h-3V8h3zM7 6h1V5a1 1 0 0 0-1 1m2-1h1v1H9Zm2 0h1v1h-1zm2 0h1v1h-1zm2 0v1h1a1 1 0 0 0-1-1m0 2h1v1h-1zm0 2h1v1h-1zm0 2h1v1h-1zm0 3a1 1 0 0 0 1-1h-1zm-2-1h1v1h-1zm-2 0h1v1h-1zm-2 0h1v1H9Zm-1 1v-1H7a1 1 0 0 0 1 1m-1-3h1v1H7Zm0-2h1v1H7Zm0-2h1v1H7Z"/></svg>
+    <text x="717" y="496" class="name">core</text>
+    <text x="1010" y="495" class="note">lõi · xanh tím</text>
+    <rect x="39" y="519" width="558" height="39" rx="6" fill="#1B1727"/>
+    <rect x="661" y="519" width="580" height="39" rx="6" fill="#1B1727"/>
+    <svg x="59" y="526" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#ffca28" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#ffecb3" d="M12 5a4 2 0 0 0-4 2 4 2 0 0 0 4 2 4 2 0 0 0 4-2 4 2 0 0 0-4-2M8 8v2c0 1.105 1.791 2 4 2s4-.895 4-2V8c0 1.105-1.791 2-4 2s-4-.895-4-2m0 3v2c0 1.105 1.791 2 4 2s4-.895 4-2v-2c0 1.105-1.791 2-4 2s-4-.895-4-2"/></svg>
+    <text x="95" y="543" class="name">data</text>
+    <svg x="681" y="526" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#E2BD64" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#FFF5E8" d="M12 5a4 2 0 0 0-4 2 4 2 0 0 0 4 2 4 2 0 0 0 4-2 4 2 0 0 0-4-2M8 8v2c0 1.105 1.791 2 4 2s4-.895 4-2V8c0 1.105-1.791 2-4 2s-4-.895-4-2m0 3v2c0 1.105 1.791 2 4 2s4-.895 4-2v-2c0 1.105-1.791 2-4 2s-4-.895-4-2"/></svg>
+    <text x="717" y="543" class="name">data</text>
+    <text x="1010" y="542" class="note">dữ liệu · vàng đất</text>
+    <rect x="39" y="566" width="558" height="39" rx="6" fill="#211C2C"/>
+    <rect x="661" y="566" width="580" height="39" rx="6" fill="#252033"/>
+    <svg x="59" y="573" width="23" height="23" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232" fill="#90a4ae" /></svg>
+    <text x="95" y="590" class="name">render</text>
+    <svg x="681" y="573" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#F29189" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#FFF5E8" d="m7 6 1 8 3.5 1 3.5-1 1-8zm4 2.95L9.33 10 11 11.051V12l-2.617-1.693v-.614L11 8Zm3.618 1.364L12 12v-.949L13.681 10 12 8.95V8l2.618 1.687z"/></svg>
+    <text x="717" y="590" class="name">render</text>
+    <text x="1010" y="589" class="note">hiển thị · hồng cam</text>
+    <rect x="39" y="613" width="558" height="39" rx="6" fill="#1B1727"/>
+    <rect x="661" y="613" width="580" height="39" rx="6" fill="#1B1727"/>
+    <svg x="59" y="620" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#00bfa5" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#a7ffeb" d="M8 6v1h1v6a2 2 0 0 0 4 0V7h1V6Zm2.5 7a.5.5 0 1 1 .5-.5.5.5 0 0 1-.5.5m1-2a.5.5 0 1 1 .5-.5.5.5 0 0 1-.5.5m.5-2h-2V7h2z"/></svg>
+    <text x="95" y="637" class="name">spec</text>
+    <svg x="681" y="620" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path id="folder" fill="#D88EE8" d="m6.922 3.768-.644-.536A1 1 0 0 0 5.638 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7.562a1 1 0 0 1-.64-.232"/><path id="motive" fill="#FFF5E8" d="M8 6v1h1v6a2 2 0 0 0 4 0V7h1V6Zm2.5 7a.5.5 0 1 1 .5-.5.5.5 0 0 1-.5.5m1-2a.5.5 0 1 1 .5-.5.5.5 0 0 1-.5.5m.5-2h-2V7h2z"/></svg>
+    <text x="717" y="637" class="name">spec</text>
+    <text x="1010" y="636" class="note">kiểm thử · tím hồng</text>
+<path d="M48 687H588 M669 687H1231" stroke="#604C72"/>
+<text x="59" y="711" class="small">FILE ICONS · GIỮ NGUYÊN</text>
+<text x="681" y="711" class="small">FILE ICONS · MD/CSV MỚI</text>
+
+    <svg x="59" y="725" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#42a5f5" d="m14 10-4 3.5L6 10H4v12h4v-6l2 2 2-2v6h4V10zm12 6v-6h-4v6h-4l6 8 6-8z"/></svg><text x="95" y="742" class="name">README.md</text>
+    <svg x="681" y="725" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path d="M3 1.5h7.2L13 4.3V14a.5.5 0 0 1-.5.5h-9A.5.5 0 0 1 3 14z" fill="#50406E" stroke="#C8A7F7" stroke-width=".8"/>
+  <path d="M10.2 1.5v2.8H13" fill="none" stroke="#C8A7F7" stroke-width=".8"/>
+  <path d="M4.5 5.4h5" stroke="#FFB36B" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M4.6 11V7.5l1.4 1.7 1.4-1.7V11m1-3.5h1.2a1.7 1.7 0 0 1 0 3.5H8.4z" fill="none" stroke="#F5EBFF" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<text x="717" y="742" class="name">README.md</text>
+    <svg x="59" y="768" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#8bc34a" d="M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m7 1.5V9h5.5zm4 7.5h-4v2h1l-2 1.67L10 13h1v-2H7v2h1l3 2.5L8 18H7v2h4v-2h-1l2-1.67L14 18h-1v2h4v-2h-1l-3-2.5 3-2.5h1z"/></svg><text x="95" y="785" class="name">sales_quarterly.csv</text>
+    <svg x="681" y="768" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <rect x="1.5" y="2" width="13" height="12" rx="1.3" fill="#174B50" stroke="#65E1D3" stroke-width=".9"/>
+  <path d="M1.8 5.2h12.4" stroke="#FFB36B" stroke-width="1.2"/>
+  <path d="M5.7 5.7v8m4.2-8v8M2 9.4h12" stroke="#9EF4E9" stroke-width=".7"/>
+  <rect x="2.8" y="6.5" width="1.8" height="1.8" rx=".35" fill="#B9F27C"/>
+  <rect x="6.9" y="10.3" width="1.8" height="1.8" rx=".35" fill="#B9F27C"/>
+  <rect x="11" y="6.5" width="1.8" height="1.8" rx=".35" fill="#CFA5FF"/>
+</svg>
+<text x="717" y="785" class="name">sales_quarterly.csv</text>
+    <svg x="59" y="811" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#ffca28" d="M2 2v12h12V2zm6 6h1v4a1.003 1.003 0 0 1-1 1H7a1.003 1.003 0 0 1-1-1v-1h1v1h1zm3 0h2v1h-2v1h1a1.003 1.003 0 0 1 1 1v1a1.003 1.003 0 0 1-1 1h-2v-1h2v-1h-1a1.003 1.003 0 0 1-1-1V9a1.003 1.003 0 0 1 1-1"/></svg><text x="95" y="828" class="name">serve.mjs</text>
+    <svg x="681" y="811" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#ffca28" d="M2 2v12h12V2zm6 6h1v4a1.003 1.003 0 0 1-1 1H7a1.003 1.003 0 0 1-1-1v-1h1v1h1zm3 0h2v1h-2v1h1a1.003 1.003 0 0 1 1 1v1a1.003 1.003 0 0 1-1 1h-2v-1h2v-1h-1a1.003 1.003 0 0 1-1-1V9a1.003 1.003 0 0 1 1-1"/></svg><text x="717" y="828" class="name">serve.mjs</text>
+<text x="40" y="911" class="small">Xem trước thiết kế · chưa cài vào VS Code · hình gốc từ Material Icon Theme (MIT)</text>
+</svg>
