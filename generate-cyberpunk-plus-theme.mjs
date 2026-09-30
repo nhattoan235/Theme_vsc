@@ -12,9 +12,26 @@ for (const rule of theme.tokenColors) {
     ['entity.name.function', 'support.function', 'meta.function-call', 'variable.function'].includes(scope))) {
     rule.settings.foreground = '#5CB8FF';
   }
+  if (rule.settings?.foreground === '#96A5FF' && rule.scope?.some(scope =>
+    ['entity.name.type', 'entity.name.class', 'support.class', 'support.type', 'storage.type'].includes(scope))) {
+    rule.settings.foreground = '#FF4FD8';
+  }
+  if (rule.settings?.foreground === '#EDE7FF' && rule.scope?.includes('variable')) {
+    rule.settings.foreground = '#F5F4FF';
+  }
+  if (rule.settings?.foreground === '#FF78B1' && rule.scope?.includes('constant.numeric')) {
+    rule.settings.foreground = '#FF667A';
+  }
 }
 theme.semanticTokenColors.function = '#5CB8FF';
 theme.semanticTokenColors.method = '#5CB8FF';
+for (const kind of ['type', 'class', 'interface', 'enum', 'typeParameter']) theme.semanticTokenColors[kind] = '#FF4FD8';
+for (const kind of ['variable', 'parameter']) theme.semanticTokenColors[kind] = '#F5F4FF';
+theme.semanticTokenColors.number = '#FF667A';
+theme.tokenColors.push({
+  scope: ['storage.type.annotation.java', 'punctuation.definition.annotation.java'],
+  settings: { foreground: '#39E6D4', fontStyle: 'italic' },
+});
 Object.assign(theme.colors, {
   // Visible accents stay concentrated around focus and navigation.
   'focusBorder': '#33E7EE',

@@ -212,7 +212,7 @@
         "constant.language.null"
       ],
       "settings": {
-        "foreground": "#FF78B1"
+        "foreground": "#FF667A"
       }
     },
     {
@@ -235,7 +235,7 @@
         "storage.type"
       ],
       "settings": {
-        "foreground": "#96A5FF"
+        "foreground": "#FF4FD8"
       }
     },
     {
@@ -245,7 +245,7 @@
         "variable.parameter"
       ],
       "settings": {
-        "foreground": "#EDE7FF"
+        "foreground": "#F5F4FF"
       }
     },
     {
@@ -349,21 +349,31 @@
         "foreground": "#FFFFFF",
         "background": "#B73465"
       }
+    },
+    {
+      "scope": [
+        "storage.type.annotation.java",
+        "punctuation.definition.annotation.java"
+      ],
+      "settings": {
+        "foreground": "#39E6D4",
+        "fontStyle": "italic"
+      }
     }
   ],
   "semanticTokenColors": {
-    "type": "#96A5FF",
-    "class": "#96A5FF",
-    "interface": "#96A5FF",
-    "enum": "#AAB5FF",
-    "typeParameter": "#AAB5FF",
+    "type": "#FF4FD8",
+    "class": "#FF4FD8",
+    "interface": "#FF4FD8",
+    "enum": "#FF4FD8",
+    "typeParameter": "#FF4FD8",
     "function": "#5CB8FF",
     "method": "#5CB8FF",
-    "parameter": "#EDE7FF",
+    "parameter": "#F5F4FF",
     "property": "#CFA5FF",
-    "variable": "#EDE7FF",
+    "variable": "#F5F4FF",
     "string": "#B9F27C",
-    "number": "#FF78B1",
+    "number": "#FF667A",
     "keyword": "#FF9E39",
     "comment": {
       "foreground": "#8A779D",
