@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src {{cspSource}}; script-src 'nonce-{{nonce}}';">
+<title>Command Deck</title><link rel="stylesheet" href="{{styleUri}}"></head>
+<body><main class="shell">
+  <header><div class="brand"><span class="mark">◈</span><span>NEON DISTRICT <b>/ OVERDRIVE</b></span></div><button id="refresh" class="quiet" aria-label="Refresh dashboard">↻ &nbsp; REFRESH</button></header>
+  <section class="hero"><div class="eyebrow">WORKSPACE COMMAND CENTER <span class="rule"></span> 01 / SYSTEM READY</div><h1>Command <em>Deck</em><span class="cursor">_</span></h1><p>Workspace at a glance. Your next move is one click away.</p><div class="chips"><span id="workspace-chip">◈ &nbsp; Loading workspace</span><span id="branch-chip">⑂ &nbsp; Loading branch</span><span>● &nbsp; READY</span></div></section>
+  <div class="grid"><section class="card"><div class="card-head"><span>01 / QUICK LAUNCH</span><small>EXECUTE</small></div><div class="actions"><button id="run-tests"><span class="action-icon orange">▷</span><span><strong>Run tests</strong><small>Execute workspace test task</small></span><b>↗</b></button><button id="open-last"><span class="action-icon cyan">▣</span><span><strong>Open last file</strong><small>Continue where you left off</small></span><b>↗</b></button><button id="source-control"><span class="action-icon pink">⑂</span><span><strong>Source control</strong><small>Review workspace changes</small></span><b>↗</b></button></div></section>
+  <section class="card"><div class="card-head"><span>02 / RECENT FILES</span><small>OPEN</small></div><div id="files" class="list" aria-live="polite"></div></section></div>
+  <section class="card task-card"><div class="card-head"><span>03 / WORKSPACE TASKS</span><small>RUN</small></div><div id="tasks" class="task-list" aria-live="polite"></div></section>
+  <footer><span>NEON DISTRICT // COMMAND DECK</span><span>READY TO BUILD <i>◆</i></span></footer>
+</main><script nonce="{{nonce}}" src="{{scriptUri}}"></script></body></html>

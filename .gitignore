@@ -2,4 +2,5 @@
 *.vsix
 !neon-district-theme-0.1.8.vsix
 !neon-district-theme-0.1.9.vsix
+!neon-district-theme-0.2.0.vsix
 !material-neon-icons/material-neon-icons-0.1.0.vsix

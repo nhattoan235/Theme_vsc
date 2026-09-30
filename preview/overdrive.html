@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neon District: Overdrive — concept preview</title>
+  <style>
+    :root { color-scheme: dark; --void:#0c0a16; --panel:#1d1b29; --panel2:#25203a; --purple:#5d3479; --pink:#ff5ab5; --cyan:#53f4ee; --orange:#ffad62; --text:#f4efff; --muted:#9c8dad; --line:#473755; }
+    * { box-sizing:border-box; }
+    html, body { margin:0; width:100%; height:100%; background:#090711; font-family:"Segoe UI",Arial,sans-serif; color:var(--text); }
+    .window { position:relative; display:flex; flex-direction:column; width:1600px; height:900px; overflow:hidden; background:var(--void); box-shadow:0 0 0 1px #614075,0 30px 100px #000; }
+    .title { display:flex; align-items:center; height:39px; flex:none; padding:0 15px; background:#171020; border-bottom:1px solid #5b296a; gap:13px; font-size:12px; }
+    .brand { display:flex; align-items:center; gap:8px; color:var(--pink); font-weight:800; letter-spacing:1.6px; }
+    .brand-mark { width:19px;height:19px; clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%); background:linear-gradient(135deg,#ff5ab5,#8a55f6); box-shadow:0 0 16px #ff5ab5; }
+    .menu { color:#c4b5ce; word-spacing:12px; margin-left:16px; }
+    .command { margin:auto; width:435px; height:25px; display:flex; align-items:center; justify-content:center; border:1px solid #704288; border-radius:7px; background:#241635; color:#cbb9dd; font-size:11px; }
+    .window-actions { display:flex; gap:21px; color:#c5abd5; font-size:12px; }
+    .body { min-height:0; display:flex; flex:1; }
+    .rail { width:54px; flex:none; display:flex; flex-direction:column; align-items:center; gap:21px; padding-top:15px; background:#171320; border-right:1px solid #42304f; }
+    .rail .glyph { width:28px; height:28px; display:grid; place-items:center; font-family:Consolas,monospace; font-size:21px; line-height:1; color:#af8ecd; }
+    .rail .glyph.on { position:relative; color:var(--cyan); text-shadow:0 0 16px #38eeef88; }
+    .rail .glyph.on:before { content:""; position:absolute; width:3px;height:31px;left:-13px;top:-2px;background:var(--pink); box-shadow:0 0 13px var(--pink); }
+    .rail .bottom { margin-top:auto; margin-bottom:18px; }
+    .sidebar { width:278px; flex:none; background:linear-gradient(180deg,#241d33,#1d1b29 30%,#1b1925); border-right:1px solid #513c5d; padding:17px 12px 0 13px; }
+    .side-head { display:flex; justify-content:space-between; color:#ffbc7d; font-size:11px; font-weight:800; letter-spacing:1.5px; padding:2px 12px 16px; }
+    .side-section { display:flex; gap:8px; padding:8px 12px; color:#c9b7d6; font-size:11px; font-weight:700; letter-spacing:.9px; border-top:1px solid #473854; }
+    .tree { font-size:12px; line-height:27px; color:#e6dced; }
+    .tree-row { height:27px; display:flex; align-items:center; gap:8px; padding:0 10px; border-radius:5px; white-space:nowrap; overflow:hidden; }
+    .tree-row.active { background:#382d51; color:white; box-shadow:inset 2px 0 var(--cyan); }
+    .tree-row .arr { color:#bc9fdb; font-size:11px; width:9px; }
+    .tree-row .ico { color:#75e9ef; font-family:Consolas,monospace; font-size:11px; width:17px; }
+    .tree-row .folder { color:#ffba76; }
+    .tree-row.indent { padding-left:24px; }
+    .tree-row.indent2 { padding-left:41px; }
+    .side-footer { position:absolute; bottom:34px; left:64px; width:256px; border-top:1px solid #4e3a61; padding:12px 10px; font-size:11px; letter-spacing:1.1px; color:#a18cb1; }
+    .main { flex:1; min-width:0; display:flex; flex-direction:column; background:var(--void); }
+    .tabs { height:43px; flex:none; display:flex; background:#17121f; border-bottom:1px solid #4d3164; }
+    .tab { position:relative; display:flex; align-items:center; gap:9px; width:240px; padding:0 18px; font-size:12px; color:#aa98ba; border-right:1px solid #32233e; }
+    .tab .file-icon { color:#ffad62; font-family:Consolas,monospace; font-size:11px; }
+    .tab.active { background:#492157; color:#99fffa; box-shadow:inset 0 -2px #4bfff0; }
+    .tab.active:before { content:""; position:absolute; top:0; left:0; right:0; height:3px; background:var(--pink); box-shadow:0 0 15px #ff53bd; }
+    .tab.active .file-icon { color:#ffce8a; }
+    .tab .close { margin-left:auto; color:#dfbce9; }
+    .crumb { height:31px; flex:none; display:flex; align-items:center; gap:9px; padding:0 22px; color:#a898b9; font-size:11px; border-bottom:1px solid #20172b; }
+    .crumb b { color:#d9cce4; font-weight:500; }
+    .status { height:26px; display:flex; justify-content:space-between; flex:none; align-items:center; padding:0 14px; color:#f2cb9f; font-size:10px; letter-spacing:.4px; background:#251c2d; border-top:1px solid #a86444; }
+    .status .left,.status .right { display:flex; gap:22px; align-items:center; }
+    .status strong { color:var(--cyan); font-weight:700; }
+    .editor { display:flex; flex:1; min-height:0; background:radial-gradient(circle at 95% 8%,#1c11302b,transparent 38%),#0c0a16; }
+    .code { flex:1; padding:15px 0 0 17px; font-family:Consolas,"Courier New",monospace; font-size:15px; line-height:27px; }
+    .line { display:flex; height:27px; align-items:center; }
+    .line.focused { position:relative; background:linear-gradient(90deg,#4b2d6829,#20152e 62%,transparent); box-shadow:inset 2px 0 var(--cyan),inset 0 1px #7a3d8c99,inset 0 -1px #7a3d8c99; }
+    .ln { flex:none; width:43px; padding-right:17px; text-align:right; color:#6c5b82; font-size:12px; }
+    .focused .ln { color:#ffba83; }
+    .code-body { color:#f4efff; white-space:pre; }
+    .k { color:#ffad62; font-weight:700; }.s { color:#b9f27c; }.f { color:#53f4ee; }.p { color:#d3adff; }.t { color:#a5b1ff; }.n { color:#ff86bf; }.c { color:#806e95; font-style:italic; }
+    .mini { width:117px; padding-top:20px; border-left:1px solid #2a2035; opacity:.75; }
+    .mini span { display:block; height:3px; margin:4px 13px; background:#5d466b; border-radius:3px; }
+    .mini span:nth-child(4n) { background:#39bcb8; width:42%; }.mini span:nth-child(5n) { background:#a66fbe; width:67%; }.mini span:nth-child(6n) { background:#df955f; width:32%; }
+    .mini .mini-focus { height:48px; border:1px solid #785294; background:#5b387035; }
+    .deck { position:relative; flex:1; overflow:hidden; padding:29px 39px 28px; background:radial-gradient(circle at 78% 26%,#5c248244,transparent 35%),radial-gradient(circle at 26% 80%,#06495a28,transparent 35%),linear-gradient(145deg,#111020,#1d1231 58%,#120d21); }
+    .deck:before { content:""; position:absolute; inset:0; background:linear-gradient(#a76ad80b 1px,transparent 1px),linear-gradient(90deg,#a76ad80b 1px,transparent 1px); background-size:36px 36px; mask-image:linear-gradient(90deg,transparent 4%,black 48%,black 96%); pointer-events:none; }
+    .deck>* { position:relative; }
+    .eyebrow { color:var(--cyan); font-family:Consolas,monospace; font-size:12px; letter-spacing:2px; }
+    .deck h1 { margin:9px 0 6px; font-size:47px; letter-spacing:-1.8px; font-weight:800; }
+    .deck h1 em { color:var(--orange); font-style:normal; text-shadow:0 0 25px #ff9b514d; }
+    .deck-lead { color:#c4b3d2; font-size:15px; margin:0 0 24px; }
+    .deck-grid { display:grid; grid-template-columns:1.22fr .88fr; gap:20px; }
+    .deck-left,.deck-right { display:flex; flex-direction:column; gap:18px; }
+    .glass { border:1px solid #765293; background:linear-gradient(145deg,#2b1c418c,#201632b8); box-shadow:0 14px 30px #07030e66,inset 0 1px #aa7cc33b; border-radius:10px; }
+    .hero-card { padding:22px 24px; min-height:184px; border-color:#b453ae; background:linear-gradient(120deg,#53255fba,#2c1b4ca3); box-shadow:0 0 32px #ba2b9b22,inset 0 1px #db9dcb66; }
+    .card-title { display:flex; align-items:center; gap:9px; color:#ffbf80; font-size:12px; letter-spacing:1.5px; font-weight:800; }
+    .hero-card h2 { font-size:25px; margin:22px 0 6px; }
+    .hero-card p { margin:0; color:#d0c2dc; font-size:13px; }
+    .buttons { display:flex; gap:10px; margin-top:20px; }
+    .btn { border-radius:5px; padding:10px 16px; color:#190f1e; font-size:11px; font-weight:800; letter-spacing:1px; background:var(--orange); box-shadow:0 0 18px #ff9e3950; }
+    .btn.secondary { color:var(--cyan); background:#173644; border:1px solid #2ea3ae; box-shadow:none; }
+    .panel-card { padding:18px 20px; }
+    .panel-card h3 { font-size:11px; letter-spacing:1.5px; color:#d3b5eb; margin:0 0 15px; }
+    .resource-row { display:flex; align-items:center; border-top:1px solid #503d64; padding:10px 0; font-size:12px; }
+    .resource-row .resource-icon { color:var(--cyan); width:29px; font-family:Consolas,monospace; }
+    .resource-row small { margin-left:auto; color:#9e8bae; }
+    .metrics { display:grid; grid-template-columns:repeat(3,1fr); gap:11px; }
+    .metric { padding:15px 17px; min-height:93px; }
+    .metric label { display:block; color:#af9cbe; font-size:10px; letter-spacing:1.2px; }
+    .metric strong { display:block; margin-top:8px; color:#f9f5ff; font-size:22px; }
+    .metric strong.cyan { color:var(--cyan); }.metric strong.orange { color:var(--orange); }
+    .branch { min-height:169px; padding:18px 21px; }
+    .branch b { display:block; margin-top:20px; font-family:Consolas,monospace; font-size:19px; color:var(--cyan); }
+    .branch p { color:#b6a7c5; font-size:12px; }
+    .branch .trace { margin-top:16px; height:24px; border-bottom:1px dashed #9b7cb0; position:relative; }
+    .branch .trace:before,.branch .trace:after { content:""; width:8px;height:8px; border-radius:50%; background:var(--pink); position:absolute; bottom:-5px; box-shadow:0 0 12px var(--pink); }
+    .branch .trace:before { left:0; }.branch .trace:after { left:82%; background:var(--cyan); box-shadow:0 0 12px var(--cyan); }
+    .task { padding:18px 21px; min-height:179px; }
+    .task-line { display:flex; justify-content:space-between; color:#e9e0ef; padding:11px 0; border-top:1px solid #503d64; font-family:Consolas,monospace; font-size:12px; }
+    .task-line .ok { color:#a3edbf; }.task-line .run { color:var(--orange); }
+    .deck-note { position:absolute; right:39px; bottom:23px; color:#9e83b3; font-family:Consolas,monospace; font-size:10px; letter-spacing:1.5px; }
+    .corner-label { position:absolute; right:26px; top:57px; font-family:Consolas,monospace; font-size:10px; letter-spacing:1.3px; color:#8c79a0; }
+    [data-view="editor"] .deck, [data-view="deck"] .editor { display:none; }
+    @media (max-width:1600px) { .window { transform-origin:top left; transform:scale(calc(100vw / 1600)); } }
+  </style>
+</head>
+<body>
+  <div class="window" id="window" data-view="editor">
+    <div class="title"><div class="brand"><span class="brand-mark"></span>NEON DISTRICT</div><div class="menu">File Edit Selection View Go Run Terminal</div><div class="command">⌕ &nbsp; ChartCraft / Search commands</div><div class="window-actions"><span>◧</span><span>□</span><span>−</span><span>×</span></div></div>
+    <div class="body"><div class="rail"><div class="glyph on">▤</div><div class="glyph">⌕</div><div class="glyph">⑂</div><div class="glyph">▷</div><div class="glyph">◇</div><div class="glyph bottom">⚙</div></div>
+      <div class="sidebar"><div class="side-head"><span>EXPLORER</span><span>•••</span></div><div class="side-section">⌄ &nbsp; CHARTCRAFT</div><div class="tree">
+        <div class="tree-row"><span class="arr">⌄</span><span class="ico folder">◆</span>src</div>
+        <div class="tree-row indent"><span class="arr">⌄</span><span class="ico folder">◆</span>core</div>
+        <div class="tree-row indent2"><span class="arr">⌄</span><span class="ico folder">◆</span>render</div>
+        <div class="tree-row indent2 active"><span class="arr"></span><span class="ico">TS</span>chart.ts</div>
+        <div class="tree-row indent2"><span class="arr"></span><span class="ico">TS</span>svg-renderer.ts</div>
+        <div class="tree-row indent2"><span class="arr"></span><span class="ico">JS</span>render.test.js</div>
+        <div class="tree-row indent"><span class="arr">›</span><span class="ico folder">◆</span>data</div>
+        <div class="tree-row indent"><span class="arr">›</span><span class="ico folder">◆</span>spec</div>
+        <div class="tree-row"><span class="arr">›</span><span class="ico folder">◆</span>examples</div>
+        <div class="tree-row"><span class="arr"></span><span class="ico">{}</span>package.json</div>
+      </div><div class="side-footer">⌄ &nbsp; OUTLINE<br><br>⌄ &nbsp; TIMELINE</div></div>
+      <div class="main"><div class="tabs"><div class="tab editor-tab active"><span class="file-icon">TS</span>chart.ts<span class="close">×</span></div><div class="tab deck-tab"><span class="file-icon">⬡</span>Command Deck<span class="close">×</span></div><div class="tab"><span class="file-icon">JS</span>render.test.js</div></div><div class="crumb"><b>src</b> › <b>core</b> › <b>render</b> › <b>chart.ts</b> › createChart</div>
+        <div class="editor"><div class="code">
+          <div class="line"><span class="ln">1</span><span class="code-body"><span class="k">import</span> { <span class="t">ChartSpec</span>, <span class="t">RenderResult</span> } <span class="k">from</span> <span class="s">'../types'</span>;</span></div>
+          <div class="line"><span class="ln">2</span><span class="code-body"><span class="k">import</span> { <span class="f">buildScales</span> } <span class="k">from</span> <span class="s">'./scales'</span>;</span></div>
+          <div class="line"><span class="ln">3</span><span class="code-body"><span class="k">import</span> { <span class="f">renderAxes</span> } <span class="k">from</span> <span class="s">'./axes'</span>;</span></div>
+          <div class="line"><span class="ln">4</span><span class="code-body"></span></div>
+          <div class="line"><span class="ln">5</span><span class="code-body"><span class="c">// One render pipeline for every chart primitive.</span></span></div>
+          <div class="line"><span class="ln">6</span><span class="code-body"><span class="k">export async function</span> <span class="f">createChart</span>(<span class="p">spec</span>: <span class="t">ChartSpec</span>): <span class="t">Promise</span>&lt;<span class="t">RenderResult</span>&gt; {</span></div>
+          <div class="line"><span class="ln">7</span><span class="code-body">  <span class="k">const</span> <span class="p">scales</span> = <span class="f">buildScales</span>(<span class="p">spec</span>.<span class="p">encoding</span>);</span></div>
+          <div class="line"><span class="ln">8</span><span class="code-body">  <span class="k">const</span> <span class="p">canvas</span> = <span class="f">createSvgCanvas</span>({</span></div>
+          <div class="line"><span class="ln">9</span><span class="code-body">    <span class="p">width</span>: <span class="p">spec</span>.<span class="p">width</span> ?? <span class="n">960</span>,</span></div>
+          <div class="line"><span class="ln">10</span><span class="code-body">    <span class="p">height</span>: <span class="p">spec</span>.<span class="p">height</span> ?? <span class="n">540</span>,</span></div>
+          <div class="line"><span class="ln">11</span><span class="code-body">    <span class="p">background</span>: <span class="s">'transparent'</span>,</span></div>
+          <div class="line"><span class="ln">12</span><span class="code-body">  });</span></div>
+          <div class="line"><span class="ln">13</span><span class="code-body"></span></div>
+          <div class="line focused"><span class="ln">14</span><span class="code-body">  <span class="f">renderAxes</span>(<span class="p">canvas</span>, <span class="p">scales</span>, <span class="p">spec</span>.<span class="p">theme</span>);</span></div>
+          <div class="line"><span class="ln">15</span><span class="code-body">  <span class="k">for</span> (<span class="k">const</span> <span class="p">mark</span> <span class="k">of</span> <span class="p">spec</span>.<span class="p">marks</span>) {</span></div>
+          <div class="line"><span class="ln">16</span><span class="code-body">    <span class="k">await</span> <span class="f">renderMark</span>(<span class="p">canvas</span>, <span class="p">mark</span>, <span class="p">scales</span>);</span></div>
+          <div class="line"><span class="ln">17</span><span class="code-body">  }</span></div>
+          <div class="line"><span class="ln">18</span><span class="code-body"></span></div>
+          <div class="line"><span class="ln">19</span><span class="code-body">  <span class="k">return</span> { <span class="p">svg</span>: <span class="p">canvas</span>.<span class="f">toString</span>(), <span class="p">warnings</span>: [] };</span></div>
+          <div class="line"><span class="ln">20</span><span class="code-body">}</span></div>
+        </div><div class="mini"><span style="width:62%"></span><span style="width:78%"></span><span style="width:41%"></span><span style="width:81%"></span><span style="width:66%"></span><div class="mini-focus"></div><span style="width:48%"></span><span style="width:72%"></span><span style="width:35%"></span><span style="width:65%"></span><span style="width:58%"></span><span style="width:73%"></span></div></div>
+        <div class="deck"><div class="eyebrow">⬡ &nbsp; OVERDRIVE / WORKSPACE 01</div><h1>Command <em>Deck</em></h1><p class="deck-lead">One place to read the project and launch the next move.</p><div class="deck-grid"><div class="deck-left"><div class="glass hero-card"><div class="card-title">◈ &nbsp; ACTIVE PROJECT</div><h2>ChartCraft</h2><p>Renderer pipeline is ready. Your last session ended in chart.ts.</p><div class="buttons"><div class="btn">▶ &nbsp; RUN TESTS</div><div class="btn secondary">↗ &nbsp; OPEN LAST FILE</div></div></div><div class="glass panel-card"><h3>RECENT EDITORS</h3><div class="resource-row"><span class="resource-icon">TS</span>src/core/render/chart.ts<small>active</small></div><div class="resource-row"><span class="resource-icon">JS</span>src/core/render/render.test.js<small>18m ago</small></div><div class="resource-row"><span class="resource-icon">MD</span>AI_Context/04_CHARTSPEC.md<small>yesterday</small></div></div></div><div class="deck-right"><div class="metrics"><div class="glass metric"><label>BRANCH</label><strong class="cyan">main</strong></div><div class="glass metric"><label>OPEN TABS</label><strong>03</strong></div><div class="glass metric"><label>TASKS</label><strong class="orange">02</strong></div></div><div class="glass branch"><div class="card-title">⑂ &nbsp; SOURCE CONTROL</div><b>codex/renderer</b><p>Changes ready to review in this workspace.</p><div class="trace"></div></div><div class="glass task"><h3>WORKSPACE TASKS</h3><div class="task-line"><span>npm test</span><span class="ok">● READY</span></div><div class="task-line"><span>npm run dev</span><span class="run">▶ LAUNCH</span></div></div></div></div><div class="deck-note">NEON DISTRICT / SYSTEM ONLINE &nbsp; ◆ &nbsp; 02</div></div>
+      </div>
+    </div>
+    <div class="status"><div class="left"><strong>⬡</strong> &nbsp; main <span>◉ &nbsp; 0 errors</span><span>◈ &nbsp; Overdrive active</span></div><div class="right"><span>Ln 14, Col 32</span><span>UTF-8</span><span>TypeScript</span><span>▣ &nbsp; READY</span></div></div>
+    <div class="corner-label">CONCEPT PREVIEW · 1600 × 900</div>
+  </div>
+  <script>
+    const view = new URLSearchParams(location.search).get('view') === 'deck' ? 'deck' : 'editor';
+    document.getElementById('window').dataset.view = view;
+    document.querySelector('.editor-tab').classList.toggle('active', view === 'editor');
+    document.querySelector('.deck-tab').classList.toggle('active', view === 'deck');
+    document.querySelector('.crumb').innerHTML = view === 'deck' ? '<b>ChartCraft</b> › <b>Command Deck</b> › overview' : '<b>src</b> › <b>core</b> › <b>render</b> › <b>chart.ts</b> › createChart';
+  </script>
+</body>
+</html>

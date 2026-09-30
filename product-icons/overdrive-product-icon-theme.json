@@ -1,0 +1,32 @@
+{
+  "$schema": "vscode://schemas/product-icon-theme",
+  "fonts": [
+    {
+      "id": "overdrive-icons",
+      "src": [
+        {
+          "path": "./overdrive.woff",
+          "format": "woff"
+        }
+      ],
+      "weight": "normal",
+      "style": "normal"
+    }
+  ],
+  "iconDefinitions": {
+    "files": { "fontCharacter": "\\E001" },
+    "search": { "fontCharacter": "\\E002" },
+    "source-control": { "fontCharacter": "\\E003" },
+    "debug-alt": { "fontCharacter": "\\E004" },
+    "run": { "fontCharacter": "\\E004" },
+    "extensions": { "fontCharacter": "\\E005" },
+    "terminal": { "fontCharacter": "\\E006" },
+    "settings-gear": { "fontCharacter": "\\E007" },
+    "gear": { "fontCharacter": "\\E007" },
+    "chevron-right": { "fontCharacter": "\\E008" },
+    "chevron-down": { "fontCharacter": "\\E009" },
+    "close": { "fontCharacter": "\\E00A" },
+    "refresh": { "fontCharacter": "\\E00B" },
+    "command": { "fontCharacter": "\\E00C" }
+  }
+}

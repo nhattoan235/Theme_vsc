@@ -7,6 +7,8 @@ $output = Join-Path $PSScriptRoot "$($package.name)-$($package.version).vsix"
 if ($LASTEXITCODE -ne 0) { throw 'Could not generate laptop theme' }
 & node (Join-Path $PSScriptRoot 'generate-cyberpunk-plus-theme.mjs')
 if ($LASTEXITCODE -ne 0) { throw 'Could not generate Cyberpunk+ theme' }
+& node (Join-Path $PSScriptRoot 'generate-overdrive-theme.mjs')
+if ($LASTEXITCODE -ne 0) { throw 'Could not generate Overdrive theme' }
 
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
@@ -59,6 +61,12 @@ try {
 <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
   <Default Extension="json" ContentType="application/json" />
   <Default Extension="md" ContentType="text/markdown" />
+  <Default Extension="js" ContentType="application/javascript" />
+  <Default Extension="cjs" ContentType="application/javascript" />
+  <Default Extension="css" ContentType="text/css" />
+  <Default Extension="html" ContentType="text/html" />
+  <Default Extension="woff" ContentType="font/woff" />
+  <Default Extension="svg" ContentType="image/svg+xml" />
   <Default Extension="vsixmanifest" ContentType="text/xml" />
 </Types>
 '@
@@ -68,6 +76,13 @@ try {
     Add-FileEntry (Join-Path $PSScriptRoot 'themes/neon-district-color-theme.json') 'extension/themes/neon-district-color-theme.json'
     Add-FileEntry (Join-Path $PSScriptRoot 'themes/neon-district-laptop-color-theme.json') 'extension/themes/neon-district-laptop-color-theme.json'
     Add-FileEntry (Join-Path $PSScriptRoot 'themes/neon-district-cyberpunk-plus-color-theme.json') 'extension/themes/neon-district-cyberpunk-plus-color-theme.json'
+    Add-FileEntry (Join-Path $PSScriptRoot 'themes/neon-district-overdrive-color-theme.json') 'extension/themes/neon-district-overdrive-color-theme.json'
+    Add-FileEntry (Join-Path $PSScriptRoot 'extension.cjs') 'extension/extension.cjs'
+    Add-FileEntry (Join-Path $PSScriptRoot 'deck/index.html') 'extension/deck/index.html'
+    Add-FileEntry (Join-Path $PSScriptRoot 'deck/deck.css') 'extension/deck/deck.css'
+    Add-FileEntry (Join-Path $PSScriptRoot 'deck/deck.js') 'extension/deck/deck.js'
+    Add-FileEntry (Join-Path $PSScriptRoot 'product-icons/overdrive-product-icon-theme.json') 'extension/product-icons/overdrive-product-icon-theme.json'
+    Add-FileEntry (Join-Path $PSScriptRoot 'product-icons/overdrive.woff') 'extension/product-icons/overdrive.woff'
     Add-FileEntry (Join-Path $PSScriptRoot 'icons/neon-district-icon-theme.json') 'extension/icons/neon-district-icon-theme.json'
     Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'icons/svg') -Filter '*.svg' -File | ForEach-Object {
         Add-FileEntry $_.FullName "extension/icons/svg/$($_.Name)"
