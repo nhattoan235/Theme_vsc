@@ -6,6 +6,8 @@ The **Laptop** color theme has lighter editor and sidebar surfaces for displays 
 
 The **Cyberpunk+** variant gives the active tab a brighter violet surface and cyan label, with a hot-pink upper edge on classic tabs. Both classic and modern VS Code tab styles are colored. Inactive tabs are dimmer so the selected file stands apart. It also adds a cyan Explorer focus outline and a darker purple terminal while keeping the syntax palette and muted status bar.
 
+In Cyberpunk+ and Overdrive, method and function names use electric blue, clearly separated from lime string literals in dense Java code.
+
 This repository disables VS Code's error and warning audio cues in its workspace settings.
 
 Plain HTML text inside elements is white in all four color themes, while tag names keep their pink accent.
@@ -16,7 +18,7 @@ Plain HTML text inside elements is white in all four color themes, while tag nam
 
 | Package | What it contains |
 | --- | --- |
-| `neon-district-theme-0.2.0.vsix` | Four color themes: **Purple Dashboard**, **Laptop**, **Cyberpunk+**, and **Overdrive**. It also includes the original Neon District file icon theme, Overdrive Product Icon Theme, and Command Deck. |
+| `neon-district-theme-0.2.1.vsix` | Four color themes: **Purple Dashboard**, **Laptop**, **Cyberpunk+**, and **Overdrive**. It also includes the original Neon District file icon theme, Overdrive Product Icon Theme, and Command Deck. |
 | `material-neon-icons/material-neon-icons-0.1.0.vsix` | Philipp Kief's Material file icons, with distinct project folders and custom Markdown and CSV icons. The upstream MIT license is included. |
 
 Install both VSIX files from VS Code's Extensions view with **Install from VSIX...**. Then choose **Neon District — Overdrive** under **Preferences: Color Theme**, **Material Neon Icons** under **Preferences: File Icon Theme**, and **Neon District — Overdrive Product Icons** under **Preferences: Product Icon Theme**. Product icons change the VS Code interface icons; file icons remain Material Neon Icons.

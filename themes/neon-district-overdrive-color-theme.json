@@ -223,7 +223,7 @@
         "variable.function"
       ],
       "settings": {
-        "foreground": "#2CE8DC"
+        "foreground": "#5CB8FF"
       }
     },
     {
@@ -357,8 +357,8 @@
     "interface": "#96A5FF",
     "enum": "#AAB5FF",
     "typeParameter": "#AAB5FF",
-    "function": "#2CE8DC",
-    "method": "#2CE8DC",
+    "function": "#5CB8FF",
+    "method": "#5CB8FF",
     "parameter": "#EDE7FF",
     "property": "#CFA5FF",
     "variable": "#EDE7FF",

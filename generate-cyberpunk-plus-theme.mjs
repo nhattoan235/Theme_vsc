@@ -5,6 +5,16 @@ const target = new URL('./themes/neon-district-cyberpunk-plus-color-theme.json',
 const theme = JSON.parse(fs.readFileSync(source, 'utf8'));
 
 theme.name = 'Neon District — Cyberpunk+';
+// Keep strings lime, but separate callable names into electric blue. In Java,
+// the previous cyan was perceived as a second green next to string literals.
+for (const rule of theme.tokenColors) {
+  if (rule.settings?.foreground === '#2CE8DC' && rule.scope?.some(scope =>
+    ['entity.name.function', 'support.function', 'meta.function-call', 'variable.function'].includes(scope))) {
+    rule.settings.foreground = '#5CB8FF';
+  }
+}
+theme.semanticTokenColors.function = '#5CB8FF';
+theme.semanticTokenColors.method = '#5CB8FF';
 Object.assign(theme.colors, {
   // Visible accents stay concentrated around focus and navigation.
   'focusBorder': '#33E7EE',
