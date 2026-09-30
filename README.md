@@ -10,15 +10,17 @@ In Cyberpunk+ and Overdrive, functions use electric blue, classes and types use 
 
 This repository disables VS Code's error and warning audio cues in its workspace settings.
 
-Plain HTML text inside elements is white in all four color themes, while tag names keep their pink accent.
+Plain HTML text inside elements is white in all five color themes, while tag names keep their pink accent.
 
 **Overdrive** adds a brighter active tab, an original geometric Product Icon Theme, and a Command Deck. Open the deck from the Command Palette with **Neon District: Open Command Deck**. It shows the current workspace and Git branch, recent open files, and available workspace tasks. Its buttons can open a file, run a task, or show Source Control. The deck opens only when requested.
+
+**Neon Circuit** is an experimental Overdrive variant with the same syntax colors. It uses a muted blue-gray Explorer, bright orange headings, lavender Activity Bar icons with a cyan active icon, and a vivid cyan selected tab. The status bar stays muted.
 
 ## Included packages
 
 | Package | What it contains |
 | --- | --- |
-| `neon-district-theme-0.2.3.vsix` | Four color themes: **Purple Dashboard**, **Laptop**, **Cyberpunk+**, and **Overdrive**. It also includes the original Neon District file icon theme, Overdrive Product Icon Theme, and Command Deck. |
+| `neon-district-theme-0.2.10.vsix` | Five color themes: **Purple Dashboard**, **Laptop**, **Cyberpunk+**, **Overdrive**, and **Neon Circuit**. It also includes the original Neon District file icon theme, Overdrive Product Icon Theme, and Command Deck. |
 | `material-neon-icons/material-neon-icons-0.1.0.vsix` | Philipp Kief's Material file icons, with distinct project folders and custom Markdown and CSV icons. The upstream MIT license is included. |
 
 Install both VSIX files from VS Code's Extensions view with **Install from VSIX...**. Then choose **Neon District — Overdrive** under **Preferences: Color Theme**, **Material Neon Icons** under **Preferences: File Icon Theme**, and **Neon District — Overdrive Product Icons** under **Preferences: Product Icon Theme**. Product icons change the VS Code interface icons; file icons remain Material Neon Icons.

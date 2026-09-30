@@ -2,7 +2,7 @@
   "name": "neon-district-theme",
   "displayName": "Neon District — Purple Dashboard",
   "description": "A high-contrast cyberpunk VS Code theme with a purple dashboard and orange neon accents.",
-  "version": "0.2.3",
+  "version": "0.2.10",
   "publisher": "local",
   "private": true,
   "engines": {
@@ -33,6 +33,11 @@
         "label": "Neon District — Overdrive",
         "uiTheme": "vs-dark",
         "path": "./themes/neon-district-overdrive-color-theme.json"
+      },
+      {
+        "label": "Neon District — Neon Circuit",
+        "uiTheme": "vs-dark",
+        "path": "./themes/neon-district-neon-circuit-color-theme.json"
       }
     ],
     "iconThemes": [

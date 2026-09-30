@@ -9,6 +9,8 @@ if ($LASTEXITCODE -ne 0) { throw 'Could not generate laptop theme' }
 if ($LASTEXITCODE -ne 0) { throw 'Could not generate Cyberpunk+ theme' }
 & node (Join-Path $PSScriptRoot 'generate-overdrive-theme.mjs')
 if ($LASTEXITCODE -ne 0) { throw 'Could not generate Overdrive theme' }
+& node (Join-Path $PSScriptRoot 'generate-neon-circuit-theme.mjs')
+if ($LASTEXITCODE -ne 0) { throw 'Could not generate Neon Circuit theme' }
 
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
@@ -77,6 +79,7 @@ try {
     Add-FileEntry (Join-Path $PSScriptRoot 'themes/neon-district-laptop-color-theme.json') 'extension/themes/neon-district-laptop-color-theme.json'
     Add-FileEntry (Join-Path $PSScriptRoot 'themes/neon-district-cyberpunk-plus-color-theme.json') 'extension/themes/neon-district-cyberpunk-plus-color-theme.json'
     Add-FileEntry (Join-Path $PSScriptRoot 'themes/neon-district-overdrive-color-theme.json') 'extension/themes/neon-district-overdrive-color-theme.json'
+    Add-FileEntry (Join-Path $PSScriptRoot 'themes/neon-district-neon-circuit-color-theme.json') 'extension/themes/neon-district-neon-circuit-color-theme.json'
     Add-FileEntry (Join-Path $PSScriptRoot 'extension.cjs') 'extension/extension.cjs'
     Add-FileEntry (Join-Path $PSScriptRoot 'deck/index.html') 'extension/deck/index.html'
     Add-FileEntry (Join-Path $PSScriptRoot 'deck/deck.css') 'extension/deck/deck.css'
